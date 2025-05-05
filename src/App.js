@@ -114,3 +114,6 @@ function GameOfLife() {
 }
 
 export default GameOfLife;
+
+///reference///
+// https://github.com/SverreNystad/game-of-Life/tree/master/app/src/main/java/conways_game_of_life ///
