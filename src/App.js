@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
 
 function GameOfLife() {
+  const initialBoard = [
+    [1, 0, 0, 0, 0],
+    [1, 1, 0, 0, 0],
+    [0, 0, 1, 1, 1],
+    [0, 1, 0, 0, 0],
+    [1, 1, 0, 0, 0],
+  ];
   const [grid, setGrid] = useState(
-    Array(5)
-      .fill()
-      .map(() =>
-        Array(5)
-          .fill()
-          .map(() => (Math.random() < 0.3 ? 1 : 0))
-      )
+    initialBoard
   );
   const [generation, setGeneration] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
